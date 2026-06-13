@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>سياسة الخصوصية - مودة فون</title>
+<title>Privacy Policy - Mawada Phone</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.7;color:#1e293b;max-width:800px;margin:0 auto;padding:24px;background:#f8fafc}
@@ -13,21 +13,188 @@ h2{font-size:20px;font-weight:700;color:#0f172a;margin:32px 0 12px;padding-botto
 h3{font-size:16px;font-weight:600;color:#334155;margin:20px 0 8px}
 p{margin-bottom:16px;color:#475569}
 ul{margin:12px 0 16px 24px;color:#475569}
+ol{margin:12px 0 16px 24px;color:#475569}
 li{margin-bottom:8px}
 a{color:#3b82f6;text-decoration:none}
 a:hover{text-decoration:underline}
 footer{margin-top:48px;padding-top:24px;border-top:1px solid #e2e8f0;color:#94a3b8;text-align:center;font-size:14px}
-.last-updated{color:#64748b;font-size:14px;margin-bottom:24px;text-align:left}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+th,td{padding:12px;border:1px solid #e2e8f0;text-align:left}
+th{background:#f1f5f9;font-weight:700}
+tr:nth-child(even){background:#f8fafc}
+.lang-toggle{position:fixed;top:16px;left:16px;z-index:100;background:#0f172a;color:#fff;border:none;border-radius:8px;padding:8px 16px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.lang-toggle:hover{background:#1e293b}
+.section{display:none}
+.section.active{display:block}
+body.rtl{direction:rtl}
+body.rtl ul,body.rtl ol{margin:12px 24px 16px 0}
+body.rtl th,body.rtl td{text-align:right}
+.hidden{display:none!important}
 .card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin-bottom:24px}
+@media(max-width:600px){body{padding:16px}.card{padding:16px}}
 </style>
 </head>
 <body>
+
+<button class="lang-toggle" id="langBtn">العربية</button>
+
+<div class="section active" id="section-en">
+
+<header>
+<h1>Privacy Policy</h1>
+<p>Mawada Phone - E-Commerce Shopping App</p>
+</header>
+
+<p style="text-align:right;color:#64748b;font-size:14px">Last updated: <span class="date-en"></span></p>
+
+<div class="card">
+<h2>1. Introduction</h2>
+<p>Welcome to <strong>Mawada Phone</strong>. Your privacy is important to us. This policy explains how we collect, use, and protect your personal information when you use our application.</p>
+</div>
+
+<div class="card">
+<h2>2. Information We Collect</h2>
+<h3>A. Information You Provide Voluntarily</h3>
+<ul>
+<li><strong>Account Information:</strong> Name, email address, phone number, password</li>
+<li><strong>Order Information:</strong> Delivery address, order notes, order history</li>
+<li><strong>Payment Information:</strong> Processed via <strong>Paymob</strong> (a PCI-DSS compliant payment gateway) — we do not store card details</li>
+</ul>
+<h3>B. Information Collected Automatically</h3>
+<ul>
+<li><strong>Device Information:</strong> Device model, operating system, app version</li>
+<li><strong>Usage Data:</strong> Pages visited, products viewed, search queries</li>
+<li><strong>Unique Identifiers:</strong> Device ID, Advertising ID (for analytics)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>3. How We Use Your Data</h2>
+<ul>
+<li>Creating and managing your account</li>
+<li>Processing and fulfilling your orders</li>
+<li>Communicating with you about orders and offers</li>
+<li>Improving user experience and fixing bugs</li>
+<li>Security and fraud prevention</li>
+<li>Legal compliance</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>4. Data Sharing with Third Parties</h2>
+<p>We <strong>do not sell</strong> your personal data. We only share it with:</p>
+<ul>
+<li><strong>Supabase:</strong> Database and authentication (hosted on AWS - Europe)</li>
+<li><strong>Paymob:</strong> Payment processing (licensed by the Central Bank of Egypt)</li>
+<li><strong>Expo:</strong> Push notifications and app updates</li>
+<li><strong>Delivery Providers:</strong> To fulfill your orders (name, phone, address only)</li>
+<li><strong>Legal Authorities:</strong> When legally required or to protect our rights</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>5. Data Security</h2>
+<ul>
+<li>HTTPS/TLS encryption for all communications</li>
+<li>Passwords encrypted with bcrypt (not readable by us)</li>
+<li>Secure JWT-based authentication</li>
+<li>Row Level Security (RLS) on database</li>
+<li>Card payments never pass through our servers (Paymob Direct)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>6. Your Rights</h2>
+<ul>
+<li><strong>Access:</strong> Request a copy of your data</li>
+<li><strong>Rectification:</strong> Update incorrect data</li>
+<li><strong>Deletion:</strong> Request deletion of your account and data</li>
+<li><strong>Objection:</strong> Refuse processing for marketing purposes</li>
+<li><strong>Data Portability:</strong> Receive your data in a portable format</li>
+</ul>
+<p>To exercise these rights, contact us at the email below.</p>
+</div>
+
+<div class="card" id="deletion-en">
+<h2>7. Account Deletion Request</h2>
+<p>You can request deletion of your account and personal data at any time through one of the following methods:</p>
+
+<h3>Method 1: In-App</h3>
+<ol>
+<li>Open the Mawada Phone app</li>
+<li>Go to <strong>Settings</strong> → <strong>Account</strong> → <strong>Delete Account</strong></li>
+<li>Confirm your deletion request</li>
+</ol>
+
+<h3>Method 2: Via Email</h3>
+<p>Send a request to: <a href="mailto:support@mawada-phone.com?subject=Account%20Deletion%20Request%20-%20Mawada%20Phone">support@mawada-phone.com</a> including:</p>
+<ul>
+<li>Your registered email address or phone number</li>
+<li>Your full name</li>
+<li>The phrase "I request deletion of my account and all personal data"</li>
+</ul>
+
+<h3>What Happens After Request?</h3>
+<table>
+<tr><th>Data</th><th>Action</th></tr>
+<tr><td>Profile info (name, email, phone)</td><td>Permanently deleted within 30 days</td></tr>
+<tr><td>Password, login sessions</td><td>Deleted immediately</td></tr>
+<tr><td>Order history, invoices</td><td>Retained for 5 years (tax/legal requirements)</td></tr>
+<tr><td>Payment data (cards)</td><td>Not stored by us — handled by Paymob</td></tr>
+<tr><td>Search history, views, favorites</td><td>Permanently deleted within 30 days</td></tr>
+<tr><td>Security logs, technical logs</td><td>Retained for 12 months for security</td></tr>
+</table>
+
+<h3>Important Notes</h3>
+<ul>
+<li>Deletion cannot be undone after completion</li>
+<li>You will receive a confirmation email when deletion is complete</li>
+<li>For inquiries: <a href="mailto:support@mawada-phone.com">support@mawada-phone.com</a></li>
+</ul>
+</div>
+
+<div class="card">
+<h2>8. Data Retention</h2>
+<ul>
+<li>Account data: For the duration of account activity + 30 days after deletion</li>
+<li>Order history: 5 years (tax/legal requirements)</li>
+<li>Security logs: 12 months</li>
+<li>Analytics data: Anonymized, deleted after 24 months</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>9. Children</h2>
+<p>Our app is not intended for children under 13. We do not knowingly collect their data. If we discover data from a child, we delete it immediately.</p>
+</div>
+
+<div class="card">
+<h2>10. Updates</h2>
+<p>We may update this policy. We will notify you of material changes via the app or email. Continued use means acceptance of the updated policy.</p>
+</div>
+
+<div class="card">
+<h2>11. Contact Us</h2>
+<p>
+<strong>Mawada Phone</strong><br/>
+Email: <a href="mailto:privacy@mawada-phone.com">privacy@mawada-phone.com</a><br/>
+Support: <a href="mailto:support@mawada-phone.com">support@mawada-phone.com</a>
+</p>
+</div>
+
+<footer>
+<p>&copy; 2025 Mawada Phone. All rights reserved.</p>
+</footer>
+</div>
+
+<div class="section" id="section-ar" lang="ar">
+
 <header>
 <h1>سياسة الخصوصية</h1>
 <p>مودة فون - تطبيق التسوق الإلكتروني</p>
 </header>
 
-<p class="last-updated">آخر تحديث: <span id="date"></span></p>
+<p style="text-align:left;color:#64748b;font-size:14px">آخر تحديث: <span class="date-ar"></span></p>
 
 <div class="card">
 <h2>1. مقدمة</h2>
@@ -97,8 +264,8 @@ footer{margin-top:48px;padding-top:24px;border-top:1px solid #e2e8f0;color:#94a3
 <p>لممارسة هذه الحقوق، تواصل معنا عبر البريد أدناه.</p>
 </div>
 
-<div class="card" id="account-deletion">
-<h2>11. طلب حذف الحساب</h2>
+<div class="card" id="deletion-ar">
+<h2>7. طلب حذف الحساب</h2>
 <p>يمكنك طلب حذف حسابك وجميع بياناتك الشخصية في أي وقت عبر إحدى الطرق التالية:</p>
 
 <h3>الطريقة الأولى: عبر التطبيق</h3>
@@ -117,14 +284,14 @@ footer{margin-top:48px;padding-top:24px;border-top:1px solid #e2e8f0;color:#94a3
 </ul>
 
 <h3>ماذا يحدث بعد الطلب؟</h3>
-<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px">
-<tr style="background:#f1f5f9"><th style="padding:12px;border:1px solid #e2e8f0;text-align:right">البيانات</th><th style="padding:12px;border:1px solid #e2e8f0;text-align:right">الإجراء</th></tr>
-<tr><td style="padding:12px;border:1px solid #e2e8f0">ملف التعريف (الاسم، الإيميل، الهاتف)</td><td style="padding:12px;border:1px solid #e2e8f0">يُحذف نهائياً خلال 30 يوماً</td></tr>
-<tr style="background:#f8fafc"><td style="padding:12px;border:1px solid #e2e8f0">كلمة المرور، جلسات الدخول</td><td style="padding:12px;border:1px solid #e2e8f0">يُحذف فوراً</td></tr>
-<tr><td style="padding:12px;border:1px solid #e2e8f0">سجل الطلبات، الفواتير</td><td style="padding:12px;border:1px solid #e2e8f0">يُحتفظ بها 5 سنوات (متطلبات ضريبية/قانونية)</td></tr>
-<tr style="background:#f8fafc"><td style="padding:12px;border:1px solid #e2e8f0">بيانات الدفع (البطاقات)</td><td style="padding:12px;border:1px solid #e2e8f0">لا نخزنها (مع Paymob) — تُحذف من طرفهم وفق سياستهم</td></tr>
-<tr><td style="padding:12px;border:1px solid #e2e8f0">سجل البحث، المشاهدات، المفضلة</td><td style="padding:12px;border:1px solid #e2e8f0">يُحذف نهائياً خلال 30 يوماً</td></tr>
-<tr style="background:#f8fafc"><td style="padding:12px;border:1px solid #e2e8f0">سجلات الأمان، السجلات التقنية</td><td style="padding:12px;border:1px solid #e2e8f0">يُحتفظ بها 12 شهراً للأمان</td></tr>
+<table>
+<tr><th>البيانات</th><th>الإجراء</th></tr>
+<tr><td>ملف التعريف (الاسم، الإيميل، الهاتف)</td><td>يُحذف نهائياً خلال 30 يوماً</td></tr>
+<tr><td>كلمة المرور، جلسات الدخول</td><td>يُحذف فوراً</td></tr>
+<tr><td>سجل الطلبات، الفواتير</td><td>يُحتفظ بها 5 سنوات (متطلبات ضريبية/قانونية)</td></tr>
+<tr><td>بيانات الدفع (البطاقات)</td><td>لا نخزنها (مع Paymob) — تُحذف من طرفهم وفق سياستهم</td></tr>
+<tr><td>سجل البحث، المشاهدات، المفضلة</td><td>يُحذف نهائياً خلال 30 يوماً</td></tr>
+<tr><td>سجلات الأمان، السجلات التقنية</td><td>يُحتفظ بها 12 شهراً للأمان</td></tr>
 </table>
 
 <h3>ملاحظات هامة</h3>
@@ -136,7 +303,7 @@ footer{margin-top:48px;padding-top:24px;border-top:1px solid #e2e8f0;color:#94a3
 </div>
 
 <div class="card">
-<h2>7. الاحتفاظ بالبيانات</h2>
+<h2>8. الاحتفاظ بالبيانات</h2>
 <ul>
 <li>بيانات الحساب: طوال فترة نشاط الحساب + 30 يوماً بعد الحذف</li>
 <li>سجل الطلبات: 5 سنوات (متطلبات ضريبية/قانونية)</li>
@@ -146,30 +313,53 @@ footer{margin-top:48px;padding-top:24px;border-top:1px solid #e2e8f0;color:#94a3
 </div>
 
 <div class="card">
-<h2>8. الأطفال</h2>
+<h2>9. الأطفال</h2>
 <p>تطبيقنا غير موجه للأطفال دون 13 عاماً. لا نجمع بياناتهم عمداً. إذا اكتشفنا جمع بيانات طفل، نحذفها فوراً.</p>
 </div>
 
 <div class="card">
-<h2>9. التحديثات</h2>
+<h2>10. التحديثات</h2>
 <p>قد نحدّث هذه السياسة. سنُعلمكم بالتغييرات الجوهرية عبر التطبيق أو البريد الإلكتروني. استمرار استخدامكم يعني قبول السياسة المحدثة.</p>
 </div>
 
 <div class="card">
-<h2>10. تواصل معنا</h2>
+<h2>11. تواصل معنا</h2>
 <p>
 <strong>مودة فون</strong><br/>
 البريد الإلكتروني: <a href="mailto:privacy@mawada-phone.com">privacy@mawada-phone.com</a><br/>
-للشكاوي: <a href="mailto:support@mawada-phone.com">support@mawada-phone.com</a>
+للاستفسارات: <a href="mailto:support@mawada-phone.com">support@mawada-phone.com</a>
 </p>
 </div>
 
 <footer>
-<p>© 2025 مودة فون. جميع الحقوق محفوظة.</p>
+<p>&copy; 2025 مودة فون. جميع الحقوق محفوظة.</p>
 </footer>
+</div>
 
 <script>
-document.getElementById('date').textContent = new Date().toLocaleDateString('ar-EG', {year:'numeric',month:'long',day:'numeric'});
+(function(){
+var isAr=false;
+var btn=document.getElementById('langBtn');
+var en=document.getElementById('section-en');
+var ar=document.getElementById('section-ar');
+
+document.querySelector('.date-en').textContent=new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+document.querySelector('.date-ar').textContent=new Date().toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'});
+
+function setLang(arMode){
+isAr=arMode;
+en.classList.toggle('active',!isAr);
+ar.classList.toggle('active',isAr);
+document.body.classList.toggle('rtl',isAr);
+btn.textContent=isAr?'English':'العربية';
+document.documentElement.lang=isAr?'ar':'en';
+}
+
+btn.onclick=function(){setLang(!isAr)};
+
+var hash=window.location.hash;
+if(hash.includes('ar')||hash.includes('delete')&&!hash.includes('en'))setLang(true);
+})();
 </script>
 </body>
 </html>
